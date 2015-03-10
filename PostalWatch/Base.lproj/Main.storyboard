@@ -1,25 +1,224 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6750" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DA5-oW-mXW">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6735"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Timeline Table View Controller-->
+        <scene sceneID="b7d-Qw-8Rt">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                <tableViewController id="DA5-oW-mXW" customClass="TimelineTableViewController" customModule="PostalWatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="22" sectionFooterHeight="22" id="pJI-9R-ywZ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="epi-no-BH7">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHj-zK-1EJ">
+                                    <rect key="frame" x="8" y="26" width="32" height="32"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="32" id="AZ1-9N-fXS"/>
+                                        <constraint firstAttribute="width" constant="32" id="yt3-Go-Fhh"/>
+                                    </constraints>
+                                    <state key="normal" image="icon_friend">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timeline" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lA9-Ql-pFK">
+                                    <rect key="frame" x="250" y="30" width="100" height="26"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="26" id="AKI-Fn-ak9"/>
+                                        <constraint firstAttribute="width" constant="100" id="XJN-vi-nPy"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efg-uS-77Q">
+                                    <rect key="frame" x="560" y="26" width="32" height="32"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="32" id="DpJ-WZ-zLQ"/>
+                                        <constraint firstAttribute="width" constant="32" id="kMM-5z-Jb6"/>
+                                    </constraints>
+                                    <state key="normal" image="icon_friend">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="pHj-zK-1EJ" firstAttribute="leading" secondItem="epi-no-BH7" secondAttribute="leading" constant="8" id="0mx-y2-ccJ"/>
+                                <constraint firstItem="lA9-Ql-pFK" firstAttribute="top" secondItem="epi-no-BH7" secondAttribute="top" constant="30" id="DFa-xg-Dq0"/>
+                                <constraint firstItem="lA9-Ql-pFK" firstAttribute="baseline" secondItem="efg-uS-77Q" secondAttribute="baseline" id="cxp-7s-F6y"/>
+                                <constraint firstAttribute="bottom" secondItem="lA9-Ql-pFK" secondAttribute="bottom" constant="8" id="lLF-CB-60D"/>
+                                <constraint firstItem="lA9-Ql-pFK" firstAttribute="centerX" secondItem="epi-no-BH7" secondAttribute="centerX" id="o1V-xf-nQf"/>
+                                <constraint firstAttribute="bottom" secondItem="pHj-zK-1EJ" secondAttribute="bottom" constant="6" id="q6G-LB-N1S"/>
+                                <constraint firstAttribute="trailing" secondItem="efg-uS-77Q" secondAttribute="trailing" constant="8" id="tsH-Uq-Nbk"/>
+                                <constraint firstAttribute="bottom" secondItem="efg-uS-77Q" secondAttribute="bottom" constant="6" id="xk7-dv-686"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="DFa-xg-Dq0"/>
+                                    <exclude reference="cxp-7s-F6y"/>
+                                </mask>
+                            </variation>
+                        </view>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostalText" rowHeight="150" id="Wyu-Oj-vyE" customClass="TextTableViewCell" customModule="PostalWatch" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wyu-Oj-vyE" id="bYd-al-qN6">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zhihu" translatesAutoresizingMaskIntoConstraints="NO" id="t2S-hQ-9pk">
+                                            <rect key="frame" x="8" y="8" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="1ur-gL-qgN"/>
+                                                <constraint firstAttribute="height" constant="64" id="jUo-jC-6LH"/>
+                                            </constraints>
+                                        </imageView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBM-CH-Tr0">
+                                            <rect key="frame" x="96" y="8" width="496" height="133.5"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="name" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMK-05-t4X">
+                                            <rect key="frame" x="8" y="72" width="60" height="34"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="60" id="Q1K-Lr-ulr"/>
+                                                <constraint firstAttribute="height" constant="34" id="Xxb-jD-HD5"/>
+                                            </constraints>
+                                            <color key="textColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="t2S-hQ-9pk" firstAttribute="top" secondItem="QBM-CH-Tr0" secondAttribute="top" id="0Nc-qC-k9B"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="RMK-05-t4X" secondAttribute="bottom" constant="27.5" id="0cg-q2-YO4"/>
+                                        <constraint firstItem="t2S-hQ-9pk" firstAttribute="leading" secondItem="bYd-al-qN6" secondAttribute="leadingMargin" id="2fK-Tq-xjM"/>
+                                        <constraint firstItem="t2S-hQ-9pk" firstAttribute="top" secondItem="RMK-05-t4X" secondAttribute="top" id="4rf-sc-oWr"/>
+                                        <constraint firstItem="t2S-hQ-9pk" firstAttribute="top" secondItem="QBM-CH-Tr0" secondAttribute="top" id="57N-25-OKS"/>
+                                        <constraint firstItem="QBM-CH-Tr0" firstAttribute="leading" secondItem="t2S-hQ-9pk" secondAttribute="trailing" constant="24" id="7lJ-cz-ezj"/>
+                                        <constraint firstItem="t2S-hQ-9pk" firstAttribute="top" secondItem="bYd-al-qN6" secondAttribute="topMargin" id="BDJ-lO-3T6"/>
+                                        <constraint firstItem="RMK-05-t4X" firstAttribute="leading" secondItem="t2S-hQ-9pk" secondAttribute="trailing" constant="10" id="GXO-DW-buc"/>
+                                        <constraint firstItem="QBM-CH-Tr0" firstAttribute="leading" secondItem="RMK-05-t4X" secondAttribute="trailing" constant="12" id="J63-Vw-K1o"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="t2S-hQ-9pk" secondAttribute="bottom" constant="33.5" id="RS8-GS-Ji4"/>
+                                        <constraint firstItem="t2S-hQ-9pk" firstAttribute="top" secondItem="RMK-05-t4X" secondAttribute="top" id="YE3-wR-4i1"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="QBM-CH-Tr0" secondAttribute="bottom" id="ZIR-oq-zlJ"/>
+                                        <constraint firstItem="QBM-CH-Tr0" firstAttribute="trailing" secondItem="bYd-al-qN6" secondAttribute="trailingMargin" id="c5b-T2-lvR"/>
+                                        <constraint firstItem="QBM-CH-Tr0" firstAttribute="leading" secondItem="RMK-05-t4X" secondAttribute="trailing" constant="86" id="gbM-bz-niA"/>
+                                        <constraint firstItem="RMK-05-t4X" firstAttribute="top" secondItem="t2S-hQ-9pk" secondAttribute="bottom" id="mN0-Rw-a7C"/>
+                                        <constraint firstItem="RMK-05-t4X" firstAttribute="leading" secondItem="t2S-hQ-9pk" secondAttribute="leading" id="mlh-o5-W5c"/>
+                                        <constraint firstItem="QBM-CH-Tr0" firstAttribute="top" secondItem="bYd-al-qN6" secondAttribute="topMargin" id="plm-2y-HPE"/>
+                                        <constraint firstItem="RMK-05-t4X" firstAttribute="leading" secondItem="t2S-hQ-9pk" secondAttribute="trailing" constant="8" symbolic="YES" id="wfg-hJ-BUl"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="0Nc-qC-k9B"/>
+                                            <exclude reference="4rf-sc-oWr"/>
+                                            <exclude reference="57N-25-OKS"/>
+                                            <exclude reference="RS8-GS-Ji4"/>
+                                            <exclude reference="YE3-wR-4i1"/>
+                                            <exclude reference="0cg-q2-YO4"/>
+                                            <exclude reference="GXO-DW-buc"/>
+                                            <exclude reference="wfg-hJ-BUl"/>
+                                            <exclude reference="J63-Vw-K1o"/>
+                                            <exclude reference="gbM-bz-niA"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="name" destination="RMK-05-t4X" id="qCU-Wu-cid"/>
+                                    <outlet property="photo" destination="t2S-hQ-9pk" id="Tsz-2J-Cbf"/>
+                                    <outlet property="postalText" destination="QBM-CH-Tr0" id="MXH-Ak-SJ7"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostalImage" id="CRi-jg-xvX" customClass="ImageTableViewCell" customModule="PostalWatch" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CRi-jg-xvX" id="DOy-zN-sEn">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zhihu" translatesAutoresizingMaskIntoConstraints="NO" id="WLg-WX-ZhV">
+                                            <rect key="frame" x="8" y="8" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="K9j-ys-5ej"/>
+                                                <constraint firstAttribute="height" constant="64" id="ctC-5D-KpV"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L78-1R-Rv0">
+                                            <rect key="frame" x="10" y="72" width="60" height="34"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="60" id="PXU-yr-tbV"/>
+                                                <constraint firstAttribute="height" constant="34" id="ZqZ-S2-Jp7"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8n8-Lt-ffD">
+                                            <rect key="frame" x="96" y="8" width="496" height="28"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="28" id="e9y-fz-uqq"/>
+                                            </constraints>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_postal_cover" translatesAutoresizingMaskIntoConstraints="NO" id="CFt-T4-0i7">
+                                            <rect key="frame" x="96" y="44" width="496" height="98"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="WLg-WX-ZhV" firstAttribute="top" secondItem="DOy-zN-sEn" secondAttribute="topMargin" id="6SO-ph-Imw"/>
+                                        <constraint firstItem="CFt-T4-0i7" firstAttribute="bottom" secondItem="DOy-zN-sEn" secondAttribute="bottomMargin" id="DnQ-Hl-ptg"/>
+                                        <constraint firstItem="CFt-T4-0i7" firstAttribute="leading" secondItem="WLg-WX-ZhV" secondAttribute="trailing" constant="24" id="HEv-Wc-hoY"/>
+                                        <constraint firstItem="8n8-Lt-ffD" firstAttribute="top" secondItem="DOy-zN-sEn" secondAttribute="topMargin" id="KMv-DZ-C0q"/>
+                                        <constraint firstItem="L78-1R-Rv0" firstAttribute="top" secondItem="WLg-WX-ZhV" secondAttribute="bottom" constant="8" id="XfO-H2-rC0"/>
+                                        <constraint firstItem="L78-1R-Rv0" firstAttribute="leading" secondItem="DOy-zN-sEn" secondAttribute="leadingMargin" constant="11" id="Y8f-Nr-uLH"/>
+                                        <constraint firstItem="CFt-T4-0i7" firstAttribute="top" secondItem="8n8-Lt-ffD" secondAttribute="bottom" constant="8" id="ZYL-HL-CzP"/>
+                                        <constraint firstItem="L78-1R-Rv0" firstAttribute="top" secondItem="WLg-WX-ZhV" secondAttribute="bottom" id="cDs-2a-RsO"/>
+                                        <constraint firstItem="8n8-Lt-ffD" firstAttribute="leading" secondItem="WLg-WX-ZhV" secondAttribute="trailing" constant="24" id="fTo-QF-a5f"/>
+                                        <constraint firstItem="8n8-Lt-ffD" firstAttribute="trailing" secondItem="DOy-zN-sEn" secondAttribute="trailingMargin" id="hnJ-C1-2fN"/>
+                                        <constraint firstItem="WLg-WX-ZhV" firstAttribute="leading" secondItem="DOy-zN-sEn" secondAttribute="leadingMargin" id="oax-0a-OME"/>
+                                        <constraint firstItem="L78-1R-Rv0" firstAttribute="leading" secondItem="DOy-zN-sEn" secondAttribute="leadingMargin" constant="2" id="vBW-Az-PQ5"/>
+                                        <constraint firstItem="CFt-T4-0i7" firstAttribute="trailing" secondItem="DOy-zN-sEn" secondAttribute="trailingMargin" id="zvf-IY-90a"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="XfO-H2-rC0"/>
+                                            <exclude reference="Y8f-Nr-uLH"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="name" destination="L78-1R-Rv0" id="Xho-MH-AW6"/>
+                                    <outlet property="photo" destination="WLg-WX-ZhV" id="OiE-9Q-mQv"/>
+                                    <outlet property="postalPic" destination="CFt-T4-0i7" id="S4h-Vc-NAQ"/>
+                                    <outlet property="postalText" destination="8n8-Lt-ffD" id="nBW-2d-vDM"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="DA5-oW-mXW" id="qzp-Gx-37S"/>
+                            <outlet property="delegate" destination="DA5-oW-mXW" id="bwz-UC-vki"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wMy-Qa-OuE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1152" y="324"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="default_postal_cover" width="1600" height="900"/>
+        <image name="icon_friend" width="100" height="100"/>
+        <image name="zhihu" width="196" height="196"/>
+    </resources>
 </document>

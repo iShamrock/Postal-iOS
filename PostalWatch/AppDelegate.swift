@@ -18,6 +18,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         return true
     }
+    
+    func application(application: UIApplication!, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]!, reply: (([NSObject : AnyObject]!) -> Void)!) {
+        println("Data received")
+        reply(userInfo)
+        let c = self.window?.rootViewController as? TimelineTableViewController
+        let kind = userInfo["kind"] as String
+        let duration = userInfo["duration"] as String
+        c?.addPostal("I \(kind) for \(duration)")
+        
+    }
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -7,12 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F3F582A1AACA92E00158656 /* TextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3F58291AACA92E00158656 /* TextTableViewCell.swift */; };
+		5F3F582C1AACA93700158656 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3F582B1AACA93700158656 /* ImageTableViewCell.swift */; };
 		5F5418BC1AAC0AA000429306 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5418BB1AAC0AA000429306 /* AppDelegate.swift */; };
-		5F5418BE1AAC0AA000429306 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5418BD1AAC0AA000429306 /* ViewController.swift */; };
 		5F5418C11AAC0AA000429306 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F5418BF1AAC0AA000429306 /* Main.storyboard */; };
 		5F5418C31AAC0AA000429306 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F5418C21AAC0AA000429306 /* Images.xcassets */; };
 		5F5418C61AAC0AA000429306 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F5418C41AAC0AA000429306 /* LaunchScreen.xib */; };
 		5F5418D21AAC0AA000429306 /* PostalWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5418D11AAC0AA000429306 /* PostalWatchTests.swift */; };
+		5F5418E71AAC0DDE00429306 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5418E61AAC0DDE00429306 /* NotificationController.swift */; };
+		5F5418E91AAC0DDE00429306 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F5418E81AAC0DDE00429306 /* Images.xcassets */; };
+		5F5418ED1AAC0DDE00429306 /* PostalWatch WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 5F5418EC1AAC0DDE00429306 /* PostalWatch WatchKit App.app */; };
+		5F5418F51AAC0DDE00429306 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F5418F31AAC0DDE00429306 /* Interface.storyboard */; };
+		5F5418F71AAC0DDE00429306 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F5418F61AAC0DDE00429306 /* Images.xcassets */; };
+		5F5418FA1AAC0DDE00429306 /* PostalWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5F5418DF1AAC0DDE00429306 /* PostalWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5F5419031AAC274600429306 /* SportInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5419021AAC274600429306 /* SportInterfaceController.swift */; };
+		5F5419051AAC2A3800429306 /* SleepingInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5419041AAC2A3800429306 /* SleepingInterfaceController.swift */; };
+		5F5419071AAC2A5100429306 /* ReadingInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5419061AAC2A5100429306 /* ReadingInterfaceController.swift */; };
+		5F54190D1AAC81A400429306 /* TimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F54190C1AAC81A400429306 /* TimelineTableViewController.swift */; };
+		5FF820AA1AAD7E3D005E7516 /* DataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF820A91AAD7E3D005E7516 /* DataSet.swift */; };
+		5FF820AC1AAD7EFE005E7516 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF820AB1AAD7EFE005E7516 /* Timer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,19 +36,63 @@
 			remoteGlobalIDString = 5F5418B51AAC0AA000429306;
 			remoteInfo = PostalWatch;
 		};
+		5F5418EE1AAC0DDE00429306 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F5418AE1AAC0AA000429306 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F5418EB1AAC0DDE00429306;
+			remoteInfo = "PostalWatch WatchKit App";
+		};
+		5F5418F81AAC0DDE00429306 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F5418AE1AAC0AA000429306 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F5418DE1AAC0DDD00429306;
+			remoteInfo = "PostalWatch WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5F5419011AAC0DDE00429306 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5F5418FA1AAC0DDE00429306 /* PostalWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5F3F58291AACA92E00158656 /* TextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
+		5F3F582B1AACA93700158656 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		5F5418B61AAC0AA000429306 /* PostalWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostalWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F5418BA1AAC0AA000429306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F5418BB1AAC0AA000429306 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5F5418BD1AAC0AA000429306 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5F5418C01AAC0AA000429306 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F5418C21AAC0AA000429306 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5F5418C51AAC0AA000429306 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5F5418CB1AAC0AA000429306 /* PostalWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostalWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F5418D01AAC0AA000429306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F5418D11AAC0AA000429306 /* PostalWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostalWatchTests.swift; sourceTree = "<group>"; };
+		5F5418DF1AAC0DDE00429306 /* PostalWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PostalWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F5418E21AAC0DDE00429306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F5418E31AAC0DDE00429306 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		5F5418E61AAC0DDE00429306 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		5F5418E81AAC0DDE00429306 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5F5418EC1AAC0DDE00429306 /* PostalWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PostalWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F5418F21AAC0DDE00429306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F5418F41AAC0DDE00429306 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		5F5418F61AAC0DDE00429306 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5F5419021AAC274600429306 /* SportInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportInterfaceController.swift; sourceTree = "<group>"; };
+		5F5419041AAC2A3800429306 /* SleepingInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepingInterfaceController.swift; sourceTree = "<group>"; };
+		5F5419061AAC2A5100429306 /* ReadingInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingInterfaceController.swift; sourceTree = "<group>"; };
+		5F54190C1AAC81A400429306 /* TimelineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewController.swift; sourceTree = "<group>"; };
+		5FF820A91AAD7E3D005E7516 /* DataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSet.swift; sourceTree = "<group>"; };
+		5FF820AB1AAD7EFE005E7516 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +110,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5F5418DC1AAC0DDD00429306 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +125,8 @@
 			children = (
 				5F5418B81AAC0AA000429306 /* PostalWatch */,
 				5F5418CE1AAC0AA000429306 /* PostalWatchTests */,
+				5F5418E01AAC0DDE00429306 /* PostalWatch WatchKit Extension */,
+				5F5418F01AAC0DDE00429306 /* PostalWatch WatchKit App */,
 				5F5418B71AAC0AA000429306 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +136,8 @@
 			children = (
 				5F5418B61AAC0AA000429306 /* PostalWatch.app */,
 				5F5418CB1AAC0AA000429306 /* PostalWatchTests.xctest */,
+				5F5418DF1AAC0DDE00429306 /* PostalWatch WatchKit Extension.appex */,
+				5F5418EC1AAC0DDE00429306 /* PostalWatch WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,11 +146,14 @@
 			isa = PBXGroup;
 			children = (
 				5F5418BB1AAC0AA000429306 /* AppDelegate.swift */,
-				5F5418BD1AAC0AA000429306 /* ViewController.swift */,
+				5F54190C1AAC81A400429306 /* TimelineTableViewController.swift */,
+				5F3F58291AACA92E00158656 /* TextTableViewCell.swift */,
+				5F3F582B1AACA93700158656 /* ImageTableViewCell.swift */,
 				5F5418BF1AAC0AA000429306 /* Main.storyboard */,
 				5F5418C21AAC0AA000429306 /* Images.xcassets */,
 				5F5418C41AAC0AA000429306 /* LaunchScreen.xib */,
 				5F5418B91AAC0AA000429306 /* Supporting Files */,
+				5FF820A91AAD7E3D005E7516 /* DataSet.swift */,
 			);
 			path = PostalWatch;
 			sourceTree = "<group>";
@@ -112,6 +183,47 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5F5418E01AAC0DDE00429306 /* PostalWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5F5418E61AAC0DDE00429306 /* NotificationController.swift */,
+				5F5418E81AAC0DDE00429306 /* Images.xcassets */,
+				5F5418E11AAC0DDE00429306 /* Supporting Files */,
+				5F5419021AAC274600429306 /* SportInterfaceController.swift */,
+				5F5419041AAC2A3800429306 /* SleepingInterfaceController.swift */,
+				5F5419061AAC2A5100429306 /* ReadingInterfaceController.swift */,
+				5FF820AB1AAD7EFE005E7516 /* Timer.swift */,
+			);
+			path = "PostalWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		5F5418E11AAC0DDE00429306 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F5418E21AAC0DDE00429306 /* Info.plist */,
+				5F5418E31AAC0DDE00429306 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F5418F01AAC0DDE00429306 /* PostalWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				5F5418F31AAC0DDE00429306 /* Interface.storyboard */,
+				5F5418F61AAC0DDE00429306 /* Images.xcassets */,
+				5F5418F11AAC0DDE00429306 /* Supporting Files */,
+			);
+			path = "PostalWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		5F5418F11AAC0DDE00429306 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F5418F21AAC0DDE00429306 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +234,12 @@
 				5F5418B21AAC0AA000429306 /* Sources */,
 				5F5418B31AAC0AA000429306 /* Frameworks */,
 				5F5418B41AAC0AA000429306 /* Resources */,
+				5F5419011AAC0DDE00429306 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5F5418F91AAC0DDE00429306 /* PBXTargetDependency */,
 			);
 			name = PostalWatch;
 			productName = PostalWatch;
@@ -150,6 +264,39 @@
 			productReference = 5F5418CB1AAC0AA000429306 /* PostalWatchTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		5F5418DE1AAC0DDD00429306 /* PostalWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F5418FE1AAC0DDE00429306 /* Build configuration list for PBXNativeTarget "PostalWatch WatchKit Extension" */;
+			buildPhases = (
+				5F5418DB1AAC0DDD00429306 /* Sources */,
+				5F5418DC1AAC0DDD00429306 /* Frameworks */,
+				5F5418DD1AAC0DDD00429306 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F5418EF1AAC0DDE00429306 /* PBXTargetDependency */,
+			);
+			name = "PostalWatch WatchKit Extension";
+			productName = "PostalWatch WatchKit Extension";
+			productReference = 5F5418DF1AAC0DDE00429306 /* PostalWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		5F5418EB1AAC0DDE00429306 /* PostalWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F5418FB1AAC0DDE00429306 /* Build configuration list for PBXNativeTarget "PostalWatch WatchKit App" */;
+			buildPhases = (
+				5F5418EA1AAC0DDE00429306 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PostalWatch WatchKit App";
+			productName = "PostalWatch WatchKit App";
+			productReference = 5F5418EC1AAC0DDE00429306 /* PostalWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +312,12 @@
 					5F5418CA1AAC0AA000429306 = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 5F5418B51AAC0AA000429306;
+					};
+					5F5418DE1AAC0DDD00429306 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					5F5418EB1AAC0DDE00429306 = {
+						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
@@ -183,6 +336,8 @@
 			targets = (
 				5F5418B51AAC0AA000429306 /* PostalWatch */,
 				5F5418CA1AAC0AA000429306 /* PostalWatchTests */,
+				5F5418DE1AAC0DDD00429306 /* PostalWatch WatchKit Extension */,
+				5F5418EB1AAC0DDE00429306 /* PostalWatch WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +360,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5F5418DD1AAC0DDD00429306 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F5418E91AAC0DDE00429306 /* Images.xcassets in Resources */,
+				5F5418ED1AAC0DDE00429306 /* PostalWatch WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F5418EA1AAC0DDE00429306 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F5418F51AAC0DDE00429306 /* Interface.storyboard in Resources */,
+				5F5418F71AAC0DDE00429306 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -212,7 +385,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F5418BE1AAC0AA000429306 /* ViewController.swift in Sources */,
+				5F54190D1AAC81A400429306 /* TimelineTableViewController.swift in Sources */,
+				5FF820AA1AAD7E3D005E7516 /* DataSet.swift in Sources */,
+				5F3F582C1AACA93700158656 /* ImageTableViewCell.swift in Sources */,
+				5F3F582A1AACA92E00158656 /* TextTableViewCell.swift in Sources */,
 				5F5418BC1AAC0AA000429306 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +401,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5F5418DB1AAC0DDD00429306 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F5419051AAC2A3800429306 /* SleepingInterfaceController.swift in Sources */,
+				5F5419071AAC2A5100429306 /* ReadingInterfaceController.swift in Sources */,
+				5F5418E71AAC0DDE00429306 /* NotificationController.swift in Sources */,
+				5FF820AC1AAD7EFE005E7516 /* Timer.swift in Sources */,
+				5F5419031AAC274600429306 /* SportInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +420,16 @@
 			isa = PBXTargetDependency;
 			target = 5F5418B51AAC0AA000429306 /* PostalWatch */;
 			targetProxy = 5F5418CC1AAC0AA000429306 /* PBXContainerItemProxy */;
+		};
+		5F5418EF1AAC0DDE00429306 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F5418EB1AAC0DDE00429306 /* PostalWatch WatchKit App */;
+			targetProxy = 5F5418EE1AAC0DDE00429306 /* PBXContainerItemProxy */;
+		};
+		5F5418F91AAC0DDE00429306 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F5418DE1AAC0DDD00429306 /* PostalWatch WatchKit Extension */;
+			targetProxy = 5F5418F81AAC0DDE00429306 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -250,6 +448,14 @@
 				5F5418C51AAC0AA000429306 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		5F5418F31AAC0DDE00429306 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F5418F41AAC0DDE00429306 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -336,6 +542,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = PostalWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +553,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = PostalWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -386,6 +594,60 @@
 			};
 			name = Release;
 		};
+		5F5418FC1AAC0DDE00429306 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = PostalWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "PostalWatch WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		5F5418FD1AAC0DDE00429306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = PostalWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "PostalWatch WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		5F5418FF1AAC0DDE00429306 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PostalWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5F5419001AAC0DDE00429306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PostalWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -405,6 +667,7 @@
 				5F5418D71AAC0AA000429306 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F5418D81AAC0AA000429306 /* Build configuration list for PBXNativeTarget "PostalWatchTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +676,25 @@
 				5F5418DA1AAC0AA000429306 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F5418FB1AAC0DDE00429306 /* Build configuration list for PBXNativeTarget "PostalWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F5418FC1AAC0DDE00429306 /* Debug */,
+				5F5418FD1AAC0DDE00429306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F5418FE1AAC0DDE00429306 /* Build configuration list for PBXNativeTarget "PostalWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F5418FF1AAC0DDE00429306 /* Debug */,
+				5F5419001AAC0DDE00429306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
